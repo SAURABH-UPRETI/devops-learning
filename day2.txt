@@ -1,0 +1,91 @@
+Day 2: Linux File & Folder Operations
+On Day 2 of my DevOps journey, I explored deeper into Linux CLI — focusing on essential file and folder operations and some powerful commands that make daily tasks smoother!
+
+📁 File & Directory Commands
+🔹 Create a file
+
+bash
+Copy
+Edit
+touch filename.txt
+🔹 Create a directory
+
+bash
+Copy
+Edit
+mkdir foldername
+🔹 List files and folders
+
+bash
+Copy
+Edit
+ls
+ls -l       # detailed view
+ls -a       # show hidden files
+🔹 Move a file or folder
+
+bash
+Copy
+Edit
+mv source.txt destination/
+mv folder1/ /new/path/
+🔹 Rename a file or folder
+
+bash
+Copy
+Edit
+mv oldname.txt newname.txt
+🔹 Delete a file
+
+bash
+Copy
+Edit
+rm filename.txt
+🔹 Delete a directory
+
+bash
+Copy
+Edit
+rm -r foldername/
+📌 Directory Navigation
+🔹 Go back one directory
+
+bash
+Copy
+Edit
+cd ..
+🔹 Go to the previous directory
+
+bash
+Copy
+Edit
+cd -
+🔹 Go to home directory
+
+bash
+Copy
+Edit
+cd ~
+# or simply:
+cd
+🔹 Show current directory
+
+bash
+Copy
+Edit
+pwd
+📖 Command Help
+🔹 To understand any command
+
+bash
+Copy
+Edit
+man <command>
+# Example: man ls
+🔹 Quick help for a command
+
+bash
+Copy
+Edit
+<command> --help
+# Example: mkdir --help
