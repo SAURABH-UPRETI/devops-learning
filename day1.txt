@@ -1,0 +1,29 @@
+Day 1: Introduction to Linux & Terminal Basics
+✅ Key Learnings:
+Basic Linux Commands:
+
+pwd – Print current working directory
+
+ls – List files and directories
+
+cd – Change directory
+
+mkdir – Make new directory
+
+touch – Create empty file
+
+clear – Clear terminal screen
+
+Important Concept:
+✅ man Command – Used to read the manual of any Linux command.
+Example: man ls shows details about the ls command.
+
+💡 Command Description Example:
+man gives a full description, usage, and options for a command.
+
+It’s your built-in guidebook while working on the terminal.
+
+📝 Practice Done:
+Opened terminal
+
+Used man, pwd, cd, ls, mkdir, touch
