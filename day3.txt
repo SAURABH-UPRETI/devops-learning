@@ -1,0 +1,61 @@
+Linux File Permissions & Ownership
+🔐 Understanding File Permissions
+Linux uses a permission system to protect files & directories.
+
+Every file/directory has:
+
+Owner
+
+Group
+
+Others (everyone else)
+
+🧱 Permission Types
+r – read
+
+w – write
+
+x – execute
+
+Example:
+
+bash
+Copy
+Edit
+-rwxr-xr-- 1 saurabh devops 1234 Jul 30 file.sh
+🔧 Changing Permissions
+chmod (change mode)
+
+bash
+Copy
+Edit
+chmod +x file.sh         # Add execute permission
+chmod 755 file.sh        # rwxr-xr-x
+👤 Changing Ownership
+chown (change owner)
+
+bash
+Copy
+Edit
+chown user:group file.sh
+🛠️ Important Commands
+ls -l – shows permissions
+
+chmod – change file permissions
+
+chown – change file owner and group
+
+umask – default permission mask
+
+⚙️ (Optional) Git Basics – Starting Version Control
+If you're also touching Git today:
+
+git init – start a new Git repo
+
+git add <file> – stage a file
+
+git commit -m "message" – commit staged changes
+
+git status – see current status
+
+
