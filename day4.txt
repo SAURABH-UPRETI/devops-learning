@@ -1,0 +1,93 @@
+Linux User Management, Sudo, Switching Users & Process Monitoring
+👤 User Management
+adduser saurabh – Adds a new user with home directory
+
+userdel saurabh – Deletes a user
+
+passwd saurabh – Set/change password for user
+
+id saurabh – Displays UID, GID, and groups of the user
+
+groups saurabh – Shows group membership
+
+🔒 Sudo (Superuser Do)
+Allows a normal user to execute commands as root/admin
+
+sudo <command> – Run command with superuser privileges
+
+Users need to be in the sudo group (check via: groups saurabh)
+
+Edit sudoers: sudo visudo (use cautiously)
+
+🔁 Switching Users
+su - <username> – Switch to another user (requires their password)
+
+exit – Return to previous user
+
+whoami – Shows current logged-in user
+
+sudo -i – Switch to root with root environment
+
+🧠 Important Concepts
+Root is the most powerful user.
+
+Avoid logging in as root directly; use sudo for safety.
+
+Use different users for different roles for security.
+
+⚙️ Process Monitoring Commands
+ps aux – Shows all running processes
+
+ps -ef – Another format to view running processes
+
+top – Interactive real-time view of system processes
+
+htop – Advanced version of top (may require install)
+
+kill <PID> – Terminate a process
+
+kill -9 <PID> – Forcefully kill a stuck process
+
+✅ Day 4: Basic Networking Commands in Linux
+🌐 ping
+Test connectivity between systems
+
+ping google.com – Sends ICMP echo request to check connection
+
+Use Ctrl + C to stop continuous ping
+
+🌍 traceroute
+Shows path that a packet takes to reach the destination
+
+traceroute google.com
+
+Helps in identifying network latency and hops
+
+(Use sudo apt install traceroute if not installed)
+
+🔄 netstat (deprecated but still used)
+Displays network connections, routing tables, ports
+
+netstat -tuln – Shows listening TCP/UDP ports
+
+netstat -anp – Shows all connections with process ID
+
+Replacement: ss command
+
+ss -tuln – Faster alternative to netstat
+
+🔧 ifconfig (deprecated; replaced by ip command)
+Shows and configures network interfaces
+
+ifconfig – Lists all interfaces and their IPs
+
+ifconfig eth0 down/up – Disable/enable an interface
+
+✅ ip command (modern alternative to ifconfig)
+ip a – Show IP addresses and interfaces
+
+ip link – Show interface status
+
+ip route – Show routing table
+
+
