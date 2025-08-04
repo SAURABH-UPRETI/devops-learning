@@ -1,0 +1,140 @@
+Networking Basics – Detailed Notes
+🔹 1. Introduction to Networking & History
+Origin of modern networking came from military needs (e.g., Cold War & ARPANET).
+
+Satellite communications influenced early networking structures.
+
+Foundation laid for the internet we use today.
+
+🔹 2. Network Connections & ISPs
+ISP (Internet Service Provider): Offers internet access to homes, offices.
+
+Types of ISPs: Dial-up, Broadband, Fiber, LTE.
+
+Public IP vs Private IP:
+
+Public: Globally unique, assigned by ISP.
+
+Private: Internal use in LAN (e.g., 192.168.x.x).
+
+NAT (Network Address Translation): Converts private IPs to public.
+
+🔹 3. Network Topologies
+Bus Topology: Single cable backbone, all devices connected to it.
+
+Star Topology: Central hub/switch connects all nodes.
+
+Mesh Topology: Every device connected to every other — highly redundant.
+
+Ring Topology: Data travels in one direction through each node.
+
+Comparison:
+
+Topology	Advantage	Disadvantage
+Bus	Cheap	Single point of failure
+Star	Easy to manage	Hub failure affects all
+Mesh	Fault tolerant	Expensive
+Ring	Predictable traffic	Failure in one breaks entire loop
+
+🔹 4. IP Addressing & Subnetting
+IPv4 Structure: 32-bit address (e.g., 192.168.1.1)
+
+Classes:
+
+Class A: 1.0.0.0 to 126.255.255.255
+
+Class B: 128.0.0.0 to 191.255.255.255
+
+Class C: 192.0.0.0 to 223.255.255.255
+
+Subnetting: Dividing networks into smaller segments using subnet masks.
+
+E.g., 255.255.255.0 (Class C default)
+
+🔹 5. Ping, TTL, and Troubleshooting
+ping [hostname/IP]: Checks connectivity.
+
+TTL (Time To Live): Limits number of hops a packet can take.
+
+Common tools:
+
+ping: Test connection.
+
+traceroute: Show hop-by-hop path.
+
+netstat: Shows active connections.
+
+ifconfig/ip a: Network interface details.
+
+🔹 6. Router Functions & Routing Tables
+Router: Forwards packets between networks using routing tables.
+
+Static Routing: Manually configured.
+
+Dynamic Routing: Automatically updates via protocols.
+
+Routing Table Contains:
+
+Destination network
+
+Next hop IP
+
+Interface
+
+Metric (cost/preference)
+
+🔹 7. Routing Protocols
+🔸 EIGRP (Enhanced Interior Gateway Routing Protocol)
+Cisco proprietary.
+
+Hybrid protocol (distance vector + link state).
+
+Fast convergence, uses DUAL algorithm.
+
+🔸 OSPF (Open Shortest Path First)
+Open standard.
+
+Link-state protocol using cost (bandwidth-based metric).
+
+Divides network into areas.
+
+🔸 BGP (Border Gateway Protocol)
+Used for routing between ISPs.
+
+Path vector protocol.
+
+Each ISP is an Autonomous System (AS).
+
+BGP ensures internet-wide routing efficiency.
+
+🔹 8. EtherChannel & STP
+EtherChannel: Combines multiple Ethernet links into one logical link to increase bandwidth.
+
+STP (Spanning Tree Protocol):
+
+Prevents loops in Layer 2 networks.
+
+Elects a root bridge.
+
+Blocks redundant paths until needed.
+
+🔹 9. MPLS & VPNs
+🔸 MPLS (Multiprotocol Label Switching)
+High-performance method of forwarding packets using labels rather than IPs.
+
+Faster and efficient for enterprise networks.
+
+🔸 VPN (Virtual Private Network)
+Secure, encrypted tunnel over the internet.
+
+Types:
+
+Remote Access VPN
+
+Site-to-Site VPN
+
+SSL VPN
+
+IPSec VPN
+
+
