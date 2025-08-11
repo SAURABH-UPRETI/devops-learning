@@ -1,0 +1,110 @@
+1. git init – Initialize a repository
+Purpose: Create a new Git repository in the current directory.
+
+Usage:
+
+bash
+Copy
+Edit
+git init
+What happens:
+
+Creates a hidden .git folder that stores all version control information.
+
+Turns your directory into a Git repository.
+
+Example:
+
+bash
+Copy
+Edit
+mkdir my_project
+cd my_project
+git init
+2. git add – Stage changes for commit
+Purpose: Add files to the staging area before committing.
+
+Usage:
+
+bash
+Copy
+Edit
+git add filename.txt     # Add a specific file
+git add .                # Add all files in the current directory
+git add *.txt            # Add all `.txt` files
+Why staging area matters:
+
+Lets you control exactly which changes go into the next commit.
+
+You can stage some changes and leave others for later.
+
+3. git commit – Save changes in Git history
+Purpose: Take a snapshot of the staged changes.
+
+Usage:
+
+bash
+Copy
+Edit
+git commit -m "Describe your changes"
+Best Practices:
+
+Write clear, concise commit messages.
+
+Use present tense: "Add login feature" not "Added login feature".
+
+Example:
+
+bash
+Copy
+Edit
+git commit -m "Initial commit with project structure"
+4. git status – Check repository state
+Purpose: Show current status of files (untracked, modified, staged).
+
+Usage:
+
+bash
+Copy
+Edit
+git status
+Example Output:
+
+vbnet
+Copy
+Edit
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+      new file:   index.html
+5. git push – Upload commits to a remote repo
+Purpose: Send local commits to a remote repository (like GitHub).
+
+Usage:
+
+bash
+Copy
+Edit
+git push origin branch_name
+Example:
+
+bash
+Copy
+Edit
+git push origin main
+Note:
+
+origin is the default name for the remote repository.
+
+You need proper authentication (username/password or token).
+
+6. git clone – Copy a remote repo to your local machine
+Purpose: Download an entire repository from a remote source.
+
+Usage:
+
+bash
+Copy
+Edit
+git clone <repo_url>
+
