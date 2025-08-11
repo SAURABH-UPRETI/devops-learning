@@ -1,0 +1,142 @@
+1. Shell Scripting Basics
+A shell script is a text file containing a series of commands that are executed by a Unix/Linux shell.
+Common shells: bash, sh, zsh, ksh (most common is bash).
+
+2. Variables in Shell Scripting
+Variables store data for later use.
+
+Syntax:
+
+bash
+Copy
+Edit
+variable_name=value   # No spaces around "="
+Accessing Variables:
+
+bash
+Copy
+Edit
+echo $variable_name
+Example:
+
+bash
+Copy
+Edit
+name="Saurabh"
+echo "Hello, $name"
+Types of Variables:
+
+User-defined variables – created by the user.
+
+Environment variables – predefined variables like $PATH, $HOME, $USER.
+
+Read input into variable:
+
+bash
+Copy
+Edit
+read username
+echo "You entered: $username"
+3. If-Else Statements
+Used for decision-making in shell scripts.
+
+Basic Syntax:
+
+bash
+Copy
+Edit
+if [ condition ]
+then
+    command(s)
+else
+    command(s)
+fi
+Example:
+
+bash
+Copy
+Edit
+num=10
+if [ $num -gt 5 ]
+then
+    echo "Number is greater than 5"
+else
+    echo "Number is 5 or less"
+fi
+Common Conditions:
+
+-eq → equal to
+
+-ne → not equal to
+
+-gt → greater than
+
+-lt → less than
+
+-ge → greater or equal
+
+-le → less or equal
+
+= → string equality
+
+!= → string inequality
+
+4. Loops in Shell Scripting
+Loops are used to execute commands repeatedly.
+
+For Loop
+bash
+Copy
+Edit
+for var in 1 2 3 4 5
+do
+    echo "Number: $var"
+done
+While Loop
+bash
+Copy
+Edit
+count=1
+while [ $count -le 5 ]
+do
+    echo "Count: $count"
+    count=$((count+1))
+done
+Until Loop
+Runs until a condition becomes true.
+
+bash
+Copy
+Edit
+num=1
+until [ $num -gt 5 ]
+do
+    echo "Number: $num"
+    num=$((num+1))
+done
+5. Combining Variables, if-else, and Loops
+Example: Check multiple numbers and print if they are even or odd.
+
+bash
+Copy
+Edit
+for num in 1 2 3 4 5
+do
+    if [ $((num % 2)) -eq 0 ]
+    then
+        echo "$num is Even"
+    else
+        echo "$num is Odd"
+    fi
+done
+✅ Key Takeaways:
+
+Variables store and reuse values in scripts.
+
+if-else controls decision-making.
+
+Loops automate repetitive tasks.
+
+Shell scripting improves automation skills, which is crucial for DevOps.
+
+
